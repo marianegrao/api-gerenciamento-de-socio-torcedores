@@ -20,7 +20,7 @@ routes.get("/clubs/:id", clubs.detailClub);
 routes.patch("/clubs/:id", clubs.updateClub);
 routes.delete("/clubs/:id", clubs.deleteClub);
 
-//routes.use(isUserLogaded);
+routes.use(isUserLogaded);
 routes.get("/users", users.detailUser);
 routes.patch("/users", users.updateUser);
 routes.delete("/users", users.deleteUser);
